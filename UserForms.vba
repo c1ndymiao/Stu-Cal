@@ -1,4 +1,4 @@
-UserForms (Code)
+' UserForms (Code)
 Private Sub MainPageButtonInstructions_Click()
     MainPage.Show
 End Sub
@@ -10,7 +10,7 @@ End Sub
 Private Sub ScheduleTimeBlocksButton_Click()
     ScheduleForm.Show
 End Sub
-Schedule Form:
+' Schedule Form:
 Private Sub UserForm_Initialize()
 
     With ScheduleForm.DateDropDown
@@ -57,10 +57,6 @@ Private Sub UserForm_Initialize()
         .AddItem "10:00 PM"
         .AddItem "11:00 PM"
     End With
-
-
-
-
 End Sub
 
 Private Sub AddScheduleButton_Click()
@@ -127,7 +123,7 @@ Private Sub AddScheduleButton_Click()
     MsgBox "Event successfully added to schedule!"
 End Sub
 
-To Do Form:
+' To Do Form:
 Private Sub UserForm_Initialize()
 
     With ToDoForm.PriorityLevelComboBox
@@ -230,7 +226,7 @@ Private Sub AddTaskButton_Click()
     MsgBox "Task successfully added to the Weekly Calendar!"
 End Sub
 
-Log Reflection:
+' Log Reflection:
 Private Sub UserForm_Initialize()
     With Me.ProdRating
         .AddItem "Highly Focused"
@@ -290,7 +286,7 @@ Private Sub LogReflectionButton_Click()
 End Sub
 
 
-Log Task Time:
+' Log Task Time:
 Private Sub LogEntryButton_Click()
     Dim taskName As String
     Dim timeEstimated As String
